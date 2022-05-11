@@ -1,0 +1,42 @@
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+    padding-inline-start: 0px;
+}
+
+.site-contacts-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.site-nav .item+.item,
+.site-contacts .item+.item {
+    margin-left: 50px;
+}
+
+.site-contacts .link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primery-text-color);
+    fill: var(--primery-text-color);
+    transition: color 250ms var(--time-function), fill 250ms var(--time-function);
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.site-contacts {
+    margin-top: 0;
+    margin-bottom: 0;
+}
