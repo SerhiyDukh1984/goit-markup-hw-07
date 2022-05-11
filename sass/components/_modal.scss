@@ -7,13 +7,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateY(0);
-    transition: transform 500ms var(--time-function);
+    transition: transform 500ms $timeFunction;
 
     width: 528px;
     height: 581px;
     /* padding: 15px; */
 
-    background: #ffffff;
+    background: $primeryWhiteColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -35,7 +35,7 @@
 
 .modal .close:hover,
 .modal .close:focus {
-    fill: var(--accent-color);
+    fill: $accentColor;
 }
 
 .modal-icon {

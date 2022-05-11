@@ -11,7 +11,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--title-text-color);
+    color: $titleTextColor;
 }
 
 .clients-list {
@@ -24,7 +24,7 @@
     width: 106px;
     height: 60px;
     fill: #afb1b8;
-    transition: fill 250ms var(--time-function);
+    transition: fill 250ms $timeFunction;
 }
 
 .clients-item:not(:last-child) {
@@ -39,15 +39,15 @@
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: border-color 250ms var(--time-function);
+    transition: border-color 250ms $timeFunction;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    border-color: var(--accent-color);
+    border-color: $accentColor;
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-    fill: var(--accent-color);
+    fill: $accentColor;
 }

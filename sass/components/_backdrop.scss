@@ -8,7 +8,7 @@
 
     opacity: 1;
 
-    transition: opacity 500ms var(--time-function), visibility 500ms var(--time-function);
+    transition: opacity 500ms $timeFunction, visibility 500ms $timeFunction;
 }
 
 .backdrop.is-hidden {

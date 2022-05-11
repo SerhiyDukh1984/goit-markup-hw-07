@@ -1,6 +1,6 @@
 body {
-    color: var(--primery-text-color);
-    background-color: var(--primery-white-color);
+    color: $primeryTextColor;
+    background-color: $primeryWhiteColor;
 
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -35,5 +35,5 @@ ul {
 }
 
 .section-title {
-    color: var(--title-text-color);
+    color: $titleTextColor;
 }

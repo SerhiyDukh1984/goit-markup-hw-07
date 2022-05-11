@@ -13,7 +13,7 @@
     height: 20px;
 
     fill: #afb1b8;
-    transition: fill 250ms var(--time-function);
+    transition: fill 250ms $timeFunction;
 }
 
 .social-link {
@@ -34,16 +34,16 @@
     border-radius: 50%;
     border-color: transparent;
 
-    background-color: var(--primery-white-color);
-    transition: background-color 250ms var(--time-function);
+    background-color: $primeryWhiteColor;
+    transition: background-color 250ms $timeFunction;
 }
 
 .soc-link:hover,
 .soc-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accentColor;
 }
 
 .social-link:hover .icon,
 .social-link:focus .icon {
-    fill: var(--primery-white-color);
+    fill: $primeryWhiteColor;
 }

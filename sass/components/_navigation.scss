@@ -1,70 +1,67 @@
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.item .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.site-nav .link::after {
-    content: '';
-
-    position: absolute;
-    bottom: -2px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-
-    opacity: 0;
-    transition: opacity 250ms var(--time-function);
-}
-
-.site-nav .link.current::after {
-    opacity: 1;
-}
-
-
-.site-nav .link.link:focus::after {
-    opacity: 1;
-}
-
 .navigation {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.site-nav {
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
     position: relative;
     display: flex;
     margin-left: 94px;
-}
-
-.site-nav .link {
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: var(--title-text-color);
-    transition: color 250ms var(--time-function);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
-
-.site-nav {
     margin-top: 0;
     margin-bottom: 0;
+  }
 }
 
-.site-nav .link.current {
-    color: var(--accent-color);
+.nav__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--title-text-color);
+  transition: color 250ms $timeFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $accentColor;
+
+      opacity: 0;
+      transition: opacity 250ms $timeFunction;
+  }
+
+  &.current::after {
+      opacity: 1;
+  }
+
+
+  &.current {
+      color: $accentColor;
+  }
+}
+
+
+
+
+.nav__list .nav__item + .nav__item {
+  margin-left: 50px;
 }
