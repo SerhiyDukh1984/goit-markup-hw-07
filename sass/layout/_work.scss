@@ -1,16 +1,11 @@
 .section-work {
-    padding-top: 0;
-}
+  padding-top: 0;
 
-.section-work .container {
-    padding-top: 0;
-}
-
-.section-work .list {
+  &__list {
     display: flex;
-}
+  }
 
-.section-work .section-title {
+  &__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -18,26 +13,28 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    color: $titleTextColor;
+  }
 }
 
-.section-work-list .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.section-work .item {
+.develop {
+  &__item {
     position: relative;
-}
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.section-work-label {
+  &__fon {
     position: absolute;
     bottom: 0;
     width: 370px;
     height: 70px;
 
     background-color: rgba(47, 48, 58, 0.8);
-}
+  }
 
-.section-work-text {
+  &__text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,4 +47,5 @@
     text-transform: uppercase;
 
     color: $primeryWhiteColor;
+  }
 }
