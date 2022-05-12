@@ -1,17 +1,16 @@
 .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: normal;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
-.checkbox-icon {
+  &__icon {
     position: absolute;
     top: 50%;
     left: 0;
@@ -24,15 +23,16 @@
 
     border: 2px solid $titleTextColor;
     transition: background 250ms $timeFunction;
-}
+  }
 
-.checkbox:checked+.checkbox-icon {
+  &:checked + &__icon {
     border-color: $accentColor;
     background-color: $accentColor;
     background-size: contain;
     background-origin: border-box;
-}
+  }
 
-.checkbox:focus+.checkbox-icon {
+  &:focus + &__icon {
     border-color: $accentColor;
+  }
 }

@@ -1,11 +1,12 @@
-.footer-form {
-    position: relative;
-    align-items: baseline;
-    border: none;
-    margin-left: auto;
+.footer__form {
+  position: relative;
+  align-items: baseline;
+  border: none;
+  margin-left: auto;
 }
 
-.footer-form-title {
+.subscribe {
+  &__title {
     margin-right: 10px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -13,26 +14,26 @@
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+  }
 
-.footer-input {
+  &__input {
     margin-right: 12px;
     padding: 0 16px;
     width: 358px;
     height: 50px;
-    color: var(--primery-white-color);
+    color: $primeryWhiteColor;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    transition: border-color 250ms var(--time-function);
-}
+    transition: border-color 250ms $timeFunction;
+  }
 
-.footer-input:focus {
-    border-color: var(--accent-color);
-}
+  &__input:focus {
+    border-color: $accentColor;
+  }
 
-.footer-form-button {
+  &__button {
     position: relative;
     margin: 0;
     padding: 10px 29px;
@@ -43,17 +44,18 @@
     font-size: 16px;
     line-height: 1.88;
     border: none;
-    color: var(--primery-white-color);
-    background-color: var(--accent-color);
+    color: $primeryWhiteColor;
+    background-color: $accentColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-}
+  }
 
-.footer-form-icon {
+  &__icon {
     position: absolute;
     bottom: 14px;
     right: 29px;
     width: 24px;
     height: 24px;
-    background-color: var(--accent-color);
+    background-color: $accentColor;
+  }
 }
