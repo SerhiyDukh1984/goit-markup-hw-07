@@ -1,4 +1,4 @@
-.works-list {
+.about__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -6,37 +6,36 @@
   justify-content: center;
 }
 
-.works-list .title {
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-
-  color: $titleTextColor;
-}
-
-.works-list .card {
+.work-card__item {
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms $timeFunction;
+
+  &__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
+
+  .work-card__foto {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__foto {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
-.works-list .card:nth-child(3n) {
-  margin-right: 0;
+.work-card__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-list .card:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-
-.card-foto {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay {
+.work-card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,33 +50,38 @@
   transition: transform 250ms $timeFunction;
 }
 
-.card:hover .overlay {
+.work-card__item:hover .work-card__overlay {
   transform: translateY(0);
 }
 
-.card-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  /* padding: 63px 24px; */
-}
-
-.works-list .card:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-
-.works-list .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.works-list-text {
+.work-card__description {
   padding: 20px 24px;
 
   border-right: 2px solid #eeeeee;
   border-left: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   text-align: left;
+
+  
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+
+    
+}
+
+.work-card__title {
+  max-width: 322px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: $titleTextColor;
 }
