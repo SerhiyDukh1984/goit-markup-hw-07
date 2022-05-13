@@ -30,7 +30,7 @@
     margin-right: 10px;
   }
 
-    &__item+.&__item {
+    &__item+&__item {
       margin-left: 50px;
     }
 }

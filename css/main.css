@@ -60,8 +60,9 @@ textarea {
   margin: 0 auto;
 }
 
-.section-work .container {
-  padding-top: 0;
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .backdrop {
@@ -455,6 +456,10 @@ textarea {
   margin-bottom: 0;
 }
 
+.nav__item + .nav__item {
+  margin-left: 50px;
+}
+
 .nav__link {
   position: relative;
   padding-top: 32px;
@@ -491,10 +496,6 @@ textarea {
 
 .nav__link.current {
   color: #2196f3;
-}
-
-.nav__list .nav__item + .nav__item {
-  margin-left: 50px;
 }
 
 .soc {
@@ -671,11 +672,6 @@ textarea {
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: #2196f3;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer {
